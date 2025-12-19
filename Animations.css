@@ -1,0 +1,119 @@
+.topPart{
+	background: blue;
+	opacity: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+span{
+	position: relative;
+	top: 20px;
+	color: white;
+	display: inline-block;
+	font-size: 5rem;
+	animation: bounce 0.4s ease infinite alternate;
+}
+
+h1 span:nth-child(2) {
+	animation-delay: 0.1s;
+}
+h1 span:nth-child(3) {
+	animation-delay: 0.2s;
+}
+h1 span:nth-child(4) {
+	animation-delay: 0.3s;
+}
+h1 span:nth-child(5) {
+	animation-delay: 0.4s;
+}
+h1 span:nth-child(6) {
+	animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+	100%{
+		top: -20px;
+	}
+}
+.secondPart{
+	text-align: center;
+}
+.autoRotate{
+	height: ;
+
+
+	animation: autoRotateAnimation;
+	animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.autoShow{
+	animation: autoShowAnimation both;
+	animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation{
+	from{
+		opacity: 0;
+		transform: translateY(200px) scale(0.3);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
+.lastPart{
+	text-align: center; 
+	font-size: 30px;
+}
+.autoBlur{  
+	
+	animation: autoBlurAnimation both;
+	animation-timeline: view();
+}
+@keyframes autoBlurAnimation{
+	0%{
+		filter: blur(30px);
+	}
+	45%, 55%{
+		filter: blur(0);
+	}
+	100%{
+		filter: blur(30px);
+	}
+}
+.grid-container{
+	font-size: 20px;
+	background-color: grey;
+	padding: 20px;
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+.item2{
+	background-color: darkred;
+	grid-column: 2;
+	grid-row: 1 / 3;
+}
+.item3{
+	background-color: purple;
+	grid-column: 1;
+	grid-row: 2 / 4;
+}
+.item4{
+	background-color: green;
+	grid-column: 2;
+	grid-row: 3 / 5;
+}
+.item{
+	padding: 20px;
+}
