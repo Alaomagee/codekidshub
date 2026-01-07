@@ -395,10 +395,11 @@
                 <!-- to get an API token!-->
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <div class="row align-items-stretch mb-5">
+                        <input type="hidden" name="access_key" value="de922c98-2e1b-4b4d-845f-bb96346ba051">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input type="hidden" name="access_key" value="de922c98-2e1b-4b4d-845f-bb96346ba051">
+                                
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
@@ -426,14 +427,7 @@
                     <!---->
                     <!-- This is what your users will see when the form-->
                     <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
+                    
                     <!-- Submit error message-->
                     <!---->
                     <!-- This is what your users will see when there is-->
