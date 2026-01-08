@@ -446,11 +446,11 @@
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="de922c98-2e1b-4b4d-845f-bb96346ba051">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
+  <input class="form-control" type="text" name="name" required>
+  <input class="form-control" type="email" name="email" required>
+  <textarea class="form-control" name="message" required></textarea>
   <button type="submit">Submit</button>
             </form>
         </section>
